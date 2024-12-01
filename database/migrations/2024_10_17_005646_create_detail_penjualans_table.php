@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id();
             $table->unsignedBigInteger('PenjualanId');
             $table->unsignedBigInteger('ProdukId');
+            $table->decimal('harga', 10, 2);
             $table->integer('JumlahProduk');
             $table->decimal('Subtotal', 10, 2);
             $table->timestamps();
